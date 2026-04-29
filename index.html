@@ -1,2 +1,47 @@
-<h1>Axis Artisan</h1>
-<input placeholder="Email">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Axis Artisan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Axis Artisan</h1>
+
+  <!-- REGISTER -->
+  <h3>Register</h3>
+  <input id="r_email" type="email" placeholder="Email">
+  <input id="r_pass" type="password" placeholder="Password">
+  <select id="r_role">
+    <option value="client">Client</option>
+    <option value="artisan">Artisan</option>
+  </select>
+  <button onclick="register()">Register</button>
+
+  <hr>
+
+  <!-- LOGIN -->
+  <h3>Login</h3>
+  <input id="l_email" type="email" placeholder="Email">
+  <input id="l_pass" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+
+  <hr>
+
+  <!-- POST JOB -->
+  <h3>Post Job</h3>
+  <input id="job_title" type="text" placeholder="Job Title">
+  <button onclick="createJob()">Post Job</button>
+
+  <hr>
+
+  <!-- JOB LIST -->
+  <h3>Jobs</h3>
+  <ul id="jobs"></ul>
+
+  <!-- LINK JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>
